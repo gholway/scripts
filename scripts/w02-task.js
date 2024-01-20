@@ -21,9 +21,11 @@ imageElement.setAttribute.alt = 'profile image of Gavin Holway';
 
 
 /* Step 5 - Array */
-
-
-
-
-
-
+const favFoods = [];
+const favFood = 'ice cream';
+favFoods.push(favFood);
+foodElement.innerHTML += `<br>${favFoods}`;
+const removedFirst = favFoods.shift();
+foodElement.innerHTML += `<br>${favFoods}`;
+const removedLast = favFoods.pop();
+foodElement.innerHTML += `<br>${favFoods}`;
