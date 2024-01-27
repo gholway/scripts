@@ -45,8 +45,13 @@ function divideNumbers (dividend, divisor){
 }
 
 /* Decision Structure */
-
-
+document.querySelector('#getTotal').addEventListener('click', total);
+function total (subtotal){
+    if(document.querySelector('#membership').value == 'member'){
+        subtotal = subtotal * 0.8;
+    }
+    return subtotal;
+}
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
